@@ -1,13 +1,144 @@
-/* components/InputComponent.module.css */
 
-  
-  .contenedorJuego{
+/*Contenedor padre del juego */
+
+.contenedorJuego {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 120vh;
+  gap: 1rem;
+  background-color: #fff3;
+}
+
+.containerCirculo {
+  position: absolute;
+  width: 5%;
+  height: 11%;
+  border-radius: 50%;
+}
+
+.inputCirculo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  border: none;
+  background: transparent;
+  outline: none;
+  color: white;
+}
+
+/*Posicion de la imagen para que los circulos queden fijos*/
+
+.posicionImg {
+  position: relative;
+  text-align: center;
+}
+
+.opionesRespuesta {
+  margin-top: 20px;
+  max-width: 550px;
+}
+
+.mensajeAdvertencia {
+  margin-top: 10px;
+  color: red;
+}
+
+.contButton {
+  margin-top: 20px;
+}
+
+.buttonEnviar {
+  background-color: blue;
+  padding: 1rem;
+  border-radius: 5px;
+  border: none;
+}
+
+.containerResultado {
+  margin-top: 20px;
+  color: red;
+}
+
+.aprobado {
+  color: green;
+}
+
+.sigPregunta {
+  margin-top: 20px;
+}
+
+.buttonSiguiente {
+  background-color: blue;
+  padding: 1rem;
+  border-radius: 5px;
+  border: none;
+}
+
+@media screen and (max-width: 460px) {
+  .contenedorJuego {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    
+    height: 140vh;
     gap: 1rem;
     background-color: #fff3;
   }
+
+  .opionesRespuesta {
+    margin-top: 20px;
+    max-width: 420ppx;
+  }
+
+  .inputCirculo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    border: none;
+    background: transparent;
+    outline: none;
+    color: white;
+    font-size: 80%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .contenedorJuego {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 160vh;
+    gap: 1rem;
+    background-color: #fff3;
+  }
+
+  .opionesRespuesta {
+    margin-top: 20px;
+    max-width: 300px;
+  }
+
+  .inputCirculo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    border: none;
+    background: transparent;
+    outline: none;
+    color: white;
+    font-size: 60%;
+  }
+
+}
+ 
